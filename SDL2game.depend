@@ -1,0 +1,116 @@
+# depslib dependency file v1.0
+1651571862 source:c:\users\admin\desktop\hello\sdl2game\part2.cpp
+	<iostream>
+	<windows.h>
+	"CommonFunc.h"
+	"BaseObject.h"
+	<SDL.h>
+	<SDL_image.h>
+	<SDl_ttf.h>
+	"game_map.h"
+	"MainObject.h"
+	"ImpTimer.h"
+	"ThreatObjects.h"
+	"ExplosionObject.h"
+	"TextObject.h"
+	"PlayerHealth.h"
+	"BossObject.h"
+
+1650961439 source:c:\users\admin\desktop\hello\sdl2game\commonfunc.cpp
+	<iostream>
+	"CommonFunc.h"
+	"BaseObject.h"
+
+1651249839 c:\users\admin\desktop\hello\sdl2game\commonfunc.h
+	<iostream>
+	<cstring>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_mixer.h>
+	<SDL_ttf.h>
+	<vector>
+
+1649481402 source:c:\users\admin\desktop\hello\sdl2game\baseobjec.cpp
+	<iostream>
+	"BaseObject.h"
+
+1649481454 c:\users\admin\desktop\hello\sdl2game\baseobject.h
+	"CommonFunc.h"
+
+1647577862 source:c:\users\admin\desktop\hello\sdl2game\game_map.cpp
+	"game_map.h"
+	<bits/stdc++.h>
+
+1651546418 c:\users\admin\desktop\hello\sdl2game\game_map.h
+	"CommonFunc.h"
+	"BaseObject.h"
+
+1651570635 c:\users\admin\desktop\hello\sdl2game\mainobject.h
+	<vector>
+	"CommonFunc.h"
+	"BaseObject.h"
+	"BulletObject.h"
+
+1651565744 source:c:\users\admin\desktop\hello\sdl2game\mainobject.cpp
+	<iostream>
+	"MainObject.h"
+	"PlayerHealth.h"
+
+1647703795 c:\users\admin\desktop\hello\sdl2game\imptimer.h
+
+1650480056 source:c:\users\admin\desktop\hello\sdl2game\imptimer.cpp
+	"ImpTimer.h"
+	<iostream>
+	"CommonFunc.h"
+
+1651506854 source:c:\users\admin\desktop\hello\sdl2game\bulletobject.cpp
+	<iostream>
+	"BulletObject.h"
+	"BaseObject.h"
+	"CommonFunc.h"
+
+1651467287 c:\users\admin\desktop\hello\sdl2game\bulletobject.h
+	"BaseObject.h"
+	"CommonFunc.h"
+
+1650997264 source:c:\users\admin\desktop\hello\sdl2game\threatobjects.cpp
+	<iostream>
+	"ThreatObjects.h"
+
+1650304559 c:\users\admin\desktop\hello\sdl2game\threatobjects.h
+	"BaseObject.h"
+	"CommonFunc.h"
+	"BulletObject.h"
+
+1650365302 source:c:\users\admin\desktop\hello\sdl2game\explosionobject.cpp
+	<iostream>
+	"ExplosionObject.h"
+
+1650365728 c:\users\admin\desktop\hello\sdl2game\explosionobject.h
+	"CommonFunc.h"
+	"BaseObject.h"
+
+1650684737 c:\users\admin\desktop\hello\sdl2game\textobject.h
+	"CommonFunc.h"
+
+1650735951 source:c:\users\admin\desktop\hello\sdl2game\textobject.cpp
+	<iostream>
+	"TextObject.h"
+
+1651635943 source:c:\users\admin\desktop\hello\sdl2game\playerhealth.cpp
+	<iostream>
+	"PlayerHealth.h"
+
+1650814565 c:\users\admin\desktop\hello\sdl2game\playerhealth.h
+	"CommonFunc.h"
+	"BaseObject.h"
+
+1651314727 source:c:\users\admin\desktop\hello\sdl2game\bossobject.cpp
+	<iostream>
+	"BossObject.h"
+
+1650991978 c:\users\admin\desktop\hello\sdl2game\bossobject.h
+	"BaseObject.h"
+	"CommonFunc.h"
+	"BulletObject.h"
+
