@@ -12,7 +12,7 @@
 static SDL_Window* g_window = NULL;
 static SDL_Renderer* g_screen = NULL;
 static SDL_Event g_event;
-
+static Mix_Music* g_music = NULL;
 
 const int FRAME_PER_SECOND = 30; //fps
 const int SCREEN_WIDTH = 1280;

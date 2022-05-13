@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1651571862 source:c:\users\admin\desktop\hello\sdl2game\part2.cpp
+1652088112 source:c:\users\admin\desktop\hello\sdl2game\part2.cpp
 	<iostream>
 	<windows.h>
 	"CommonFunc.h"
@@ -21,7 +21,7 @@
 	"CommonFunc.h"
 	"BaseObject.h"
 
-1651249839 c:\users\admin\desktop\hello\sdl2game\commonfunc.h
+1652088124 c:\users\admin\desktop\hello\sdl2game\commonfunc.h
 	<iostream>
 	<cstring>
 	<SDL.h>

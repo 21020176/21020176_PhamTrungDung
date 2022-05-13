@@ -17,6 +17,9 @@
 BaseObject g_background;
 TTF_Font* font_time = NULL;
 
+Mix_Chunk* player_gun = NULL;
+
+
 bool InitData()
 {
     bool success = true;
@@ -62,6 +65,19 @@ bool InitData()
     return success;
 }
 
+bool loadMedia()
+{
+    bool success = true;
+
+      g_music = Mix_LoadMUS("sound//jungle_music.wav");
+      if (g_music == NULL) success =false;
+
+      player_gun = Mix_LoadWAV("sound//player_gun.wav");
+      if (player_gun == NULL) success = false;
+
+      return success;
+}
+
 bool LoadBackGround()
 {
     bool ret = g_background.LoadImg("bg3.png", g_screen);
@@ -74,6 +90,13 @@ void close()
 {
     g_background.Free();
 
+    Mix_FreeChunk(player_gun);
+
+    player_gun = NULL;
+
+    Mix_FreeMusic(g_music);
+    g_music = NULL;
+
     SDL_DestroyRenderer(g_screen);
     g_screen = NULL;
 
@@ -82,6 +105,7 @@ void close()
 
     IMG_Quit();
     SDL_Quit();
+    Mix_Quit();
 
 }
 std::vector<BossObject*> MakeBossList()
@@ -230,6 +254,7 @@ int main(int argc, char* argv[])
 
         player_health.Show(g_screen);
 
+        Mix_PlayMusic(g_music, -1);
 
         for(int i=0; i<threats_list.size(); i++)
         {
