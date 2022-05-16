@@ -223,6 +223,7 @@ int main(int argc, char* argv[])
     TextObject time_game;
     time_game.SetColor(TextObject::WHITE_TEXT);
 
+    int gun_select = p_player.get_money_count();
 
 
     bool is_quit = false;
@@ -238,6 +239,7 @@ int main(int argc, char* argv[])
 
             p_player.HandelInputAction(g_event, g_screen);
         }
+
         SDL_SetRenderDrawColor(g_screen, RENDER_DRAW_COLOR, RENDER_DRAW_COLOR, RENDER_DRAW_COLOR, RENDER_DRAW_COLOR);
         SDL_RenderClear(g_screen);
 
@@ -255,6 +257,7 @@ int main(int argc, char* argv[])
         player_health.Show(g_screen);
 
         Mix_PlayMusic(g_music, -1);
+
 
         for(int i=0; i<threats_list.size(); i++)
         {
@@ -305,6 +308,7 @@ int main(int argc, char* argv[])
 
                     if (num_die < 4)
                     {
+                        gun_select = 0;
                         p_threat->Free();
                         threats_list.erase(threats_list.begin() + i);
                         p_player.SetRect(0,0);

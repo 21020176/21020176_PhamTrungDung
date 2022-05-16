@@ -1,6 +1,5 @@
 #include <iostream>
 #include "MainObject.h"
-#include "PlayerHealth.h"
 
 MainObject::MainObject()
 {
